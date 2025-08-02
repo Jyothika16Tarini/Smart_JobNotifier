@@ -1,33 +1,20 @@
-# Smart_JobNotifier
-This project fetches real-time job listings from multiple web sources, processes and cleans the data, and presents it through a structured HTML-based interface. It helps users discover relevant job opportunities efficiently while laying the groundwork for advanced job matching and recommendations.
+🚀 Live Job Scraping and Notification System
+This project fetches real-time job listings from multiple web sources, processes and structures the data, and displays it through a user-friendly HTML interface. It uses KNN-based classification for skill-based categorization and is designed for future semantic matching and user recommendations.
 
-Features
-Real-time job scraping using Python (Requests, BeautifulSoup)
+✨ Features
+🔍 Real-time job scraping using Python (Requests, BeautifulSoup)
 
-Data cleaning, de-duplication, and structured job formatting
+🧹 Data cleaning and de-duplication for structured job details
 
-Interactive HTML interface with UI rendering for job listings
+🌐 Interactive HTML-based interface for job listings
 
-KNN-based job classification based on required skills and job roles
+📊 KNN-based job classification for skill-specific recommendations
 
-Scalable architecture for future semantic job matching using sentence embeddings
+🔮 Scalable design for semantic matching and future notifications
 
-Supports notification integration for recommended jobs
+🛠 Tech Stack
+Backend: Python (Requests, BeautifulSoup, Scikit-learn)
 
-Tech Stack
-Python: Requests, BeautifulSoup, Scikit-learn
+Frontend: HTML, CSS
 
-Frontend: HTML, CSS (basic UI rendering)
-
-Algorithms: KNN classification, (extensible to sentence embeddings)
-
-How It Works
-Scrapes job data from real-time sources
-
-Cleans and structures job details (title, skills, location, etc.)
-
-Classifies jobs using KNN
-
-Displays results in an HTML-based job listing page
-
-Prepares for future extensions (semantic matching, recommendations)
+Machine Learning: KNN classification (extensible to sentence embeddings)
