@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top Recommended Jobs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            padding: 30px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            color: #444;
+        }
+        .job-card {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .job-card h3 {
+            margin: 0;
+            color: #333;
+        }
+        .job-card p {
+            margin: 6px 0;
+        }
+        .job-card a {
+            color: #5d47d2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .back-link a {
+            text-decoration: none;
+            color: #5d47d2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🔝 Top Recommended Jobs</h2>
+        <p style="text-align: center;"><strong>Skills:</strong> {{ skills }}</p>
+
+        {% if top_jobs %}
+            {% for job in top_jobs %}
+                <div class="job-card">
+                    <h3>{{ job.title }}</h3>
+                    <p><strong>Company:</strong> {{ job.company }}</p>
+                    <p><strong>Location:</strong> {{ job.location }}</p>
+                    <p><strong>Tags:</strong> {{ job.tags }}</p>
+                    <p><a href="{{ job.link }}" target="_blank">🔗 View Job</a></p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p style="text-align: center;">No matching jobs found.</p>
+        {% endif %}
+
+        <div class="back-link">
+            <a href="{{ url_for('home') }}">← Back to Search</a>
+        </div>
+    </div>
+</body>
+</html>
