@@ -1,4 +1,4 @@
-# 🚀 Live Job Scraping and Notification System  
+# 🚀 Smart Job Notifier Using Web Scraping 
 This project fetches **real-time job listings** from multiple web sources, processes and structures the data, and displays it through a **user-friendly HTML interface**.  
 It uses **KNN-based classification** for skill-based categorization and is designed for **future semantic matching** and **user recommendations**.
 
